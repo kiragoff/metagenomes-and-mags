@@ -3,15 +3,6 @@ set -e
 ##Metagenomic assembly of short read Illumina data
 ##3a. Local binning 
 
-
-#let's try installing comebin as a binner and running that as well
-#seeing good benchmarks for comebin, metadecoder
-#jfc, fought with metawrap forever and the problem is that it doesn't like .fq files, only .fastq
-
-conda update -n base conda
-
-/home/kira.goff/software/miniforge3/envs/comebin_env
-
 conda activate comebin_env
 
 run_comebin.sh -a /mnt/work-drive/kira/shortread-meta/metaspades/contigs1k.fasta \
